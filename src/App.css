@@ -19,10 +19,10 @@
 }
 
 .countries-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
-  justify-items: center;
+  justify-content: center;
 }
 
 .countryCard {
