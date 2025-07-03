@@ -7,7 +7,10 @@ const CountrySearch = () => {
 
   useEffect(() => {
     fetch(
-      "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries"
+      "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries",
+      {
+        mode: "cors",
+      }
     )
       .then((res) => {
         if (!res.ok) {
